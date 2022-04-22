@@ -1,3 +1,12 @@
+/******w*************
+    
+    Project 3 Javascript
+    Name: Khai Nguyen
+    Date: 22/04/2022
+    Description: Project 3
+
+********************/
+
 document.addEventListener("DOMContentLoaded", load);
 
 function load()
