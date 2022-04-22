@@ -1,0 +1,321 @@
+/******w*************
+    
+    Project 3 Stylesheet
+    Name: Khai Nguyen
+    Date: 19/04/2022
+    Description: Project 3 CSS Mockup
+
+********************/
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html
+{
+	background-color: #eceaec;
+}
+
+ul
+{
+	list-style: none;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+body
+{
+	font-family: verdana;
+}
+
+#header
+{
+	width: 100%;
+	background-color: #1d6d00;
+}
+
+#container
+{
+	display: flex;
+	width: 50%;
+	margin: auto;
+	justify-content: space-between;
+}
+
+#header h1
+{
+	font-family: 'Square Peg', cursive;
+	font-size: 4em;
+	width: fit-content;
+	color:rgb(204, 221, 197);
+}
+
+#topnav ul
+{
+	display: flex;
+	padding: 20px 0px;
+	justify-content: center;
+}
+
+#topnav ul li
+{
+	margin: 7px 10px;
+	font-size: 1.35em;
+	color: #cdf0c1;
+}
+
+#topnav ul li a
+{
+	color: #cdf0c1;
+	transition: 0.3s;
+	padding: 9px 20px;
+}
+
+#currentpage a
+{
+	border: 0px #279200 solid;
+	border-radius: 20px;
+	background-color: #279200;
+}
+
+#topnav ul li a:hover
+{
+	border-radius: 20px;
+	background-color: #279200;
+}
+
+#dropdown-hover
+{
+	display: relative;
+}
+
+#dropdown-hover #dropdown-menu
+{
+	display: none;
+	position: absolute;
+	z-index: 1;
+	background-color: #1d6d00;
+	max-width: 300px;
+	margin: 0px;
+	border-radius: 25px;
+	padding: 0px 0px 10px 0px;
+}
+
+#dropdown-hover li
+{
+	margin: 0px 0px;
+	padding: 5px 0px;
+}
+
+#dropdown-hover li a
+{
+	font-size: 0.74em;
+}
+
+#dropdown-content .nohover
+{
+	pointer-events: none;
+}
+
+#dropdown-content:hover #dropdown-menu
+{
+	display: block;
+}
+
+#main
+{
+	background-color: #fff;
+	border-radius: 20px;
+	width: 50%;
+	margin: 30px auto;
+}
+
+
+#mainheading
+{
+	width: 90%;
+	padding-top: 20px;
+	margin: 10px auto;
+}
+
+#mainheading h2
+{
+	padding-top: 10px;
+}
+
+figure
+{
+	margin-bottom: 10px;
+}
+
+img
+{
+	width: 100%;
+	height: auto;
+}
+
+figure figcaption
+{
+	font-size: 0.85em;
+	font-style: italic;
+}
+
+#content
+{
+	width: 90%;
+	margin: 10px auto;
+	line-height: 26px;
+}
+
+#content p
+{
+	padding: 10px 0px;
+}
+
+#content p:last-child
+{
+	padding-bottom: 20px;
+}
+
+#footer
+{
+	width: 100%;
+	margin-top: 40px;
+	background-color: #fff;
+	border-top: 1px #afafaf solid 
+}
+
+#botnav ul
+{
+	margin: 0px auto;
+	width: 50%;
+	display: flex;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 1px #afafaf dotted;
+}
+
+#botnav ul ul
+{
+	display: block;
+	border-bottom: 0px;
+	margin-left: 7px;
+	padding-top: 0px;
+}
+
+#menuheading
+{
+	font-weight: bold;
+}
+
+#menuheading:hover
+{
+	text-decoration: none !important;
+}
+
+.menuitems
+{
+	font-size: 0.9em;
+	color: #333;
+	width: max-content;
+	margin: 0px !important;
+	padding-top: 5px;
+}
+
+#botnav ul li
+{
+	margin: 0px 40px 0px 0px;
+}
+
+#botnav ul li a
+{
+	color: #000;
+}
+
+#botnav ul li a:hover
+{
+	text-decoration: underline;
+}
+
+#footer p
+{
+	margin: 0px auto;
+	width: 50%;
+	text-align: right;
+	font-size: 0.8em;
+	padding: 5px 0px 15px 0px;
+}
+
+fieldset
+{
+	border: none;
+}
+
+.error
+{
+	color: red;
+	font-size: 0.87em;
+	font-style: italic;
+	display: none;
+}
+
+#contact label
+{
+	float:left;
+	width: 150px;
+	line-height: 20px;
+}
+
+#contact input, #contact textarea
+{
+	border: 1px #333 solid;
+	width: 350px;
+	padding: 5px;
+	background-color: #d1d1d1;
+}
+
+#contact li
+{
+	padding: 10px;
+}
+
+#btncontainer
+{
+	width: 500px;
+	margin: auto;
+}
+
+#submit, #reset
+{
+	width: 60px;
+	height: 30px;
+	color: #333;
+	margin-top: 8px;
+	font-size: 16px;
+	margin-bottom: 30px;
+	transition: 0.3s;
+}
+
+#submit
+{
+	margin-right: 20px;
+}
+
+#submit:hover, #reset:hover
+{
+	background-color: #cdf0c1;
+	border: 1px #000 solid;
+	border-radius: 3px;
+}
+
+#contact input:focus, #contact textarea:focus
+{
+	background-color: #fff;
+	color: #279200;
+}

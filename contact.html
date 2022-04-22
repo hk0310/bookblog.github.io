@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+	<title>Contact Me</title>
+	<link rel="stylesheet" type="text/css" href="general.css"/>
+	<script src="js/formValidate.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="container">
+            <h1>Khai's Book Blog</h1>
+            <nav id = "topnav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li id="dropdown-hover">
+                        <div id="dropdown-content">
+                            <a class="nohover">Book Reviews ▾</a>
+                            <ul id="dropdown-menu">
+                                <li><a href="paternus.html">The Paternus Trilogy</a></li>
+                                <li><a href="hobbit.html">The Hobbit</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="currentpage"><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+	<div id="main">
+		<div id="mainheading">
+			<h1>For inquiries and bug reporting:</h1>
+		</div>
+		<div id="content">
+			<form id="contact" action="index.html" method="post">
+                <fieldset>
+                    <ul>
+                        <li>
+                            <label for="name">Name*</label>
+                            <input type="text" name="name" id="name"/>
+                            <p class="error" id="name_error">* Required field</p>
+                        </li>
+
+                        <li>
+                            <label for="phone">Phone Number</label>
+                            <input type="number" name="phone" id="phone"/>
+                            <p class="error" id="phoneInvalid_error">* Invalid phone number</p>
+                        </li>
+
+                        <li>
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" id="email"/>
+                            <p class="error" id="email_error">* Required field</p>
+                            <p class="error" id="emailInvalid_error">* Invalid email</p>
+                        </li>
+
+                        <li>
+                            <label for="comment">Comments</label>
+                            <textarea id="comment" name="comment" rows="7"></textarea>
+                        </li>
+                    </ul>
+                    <div id="btncontainer">
+                        <button type="submit" id="submit">Submit</button>
+                        <button type="reset" id="reset">Reset</button>
+                    </div>
+                </fieldset>
+            </form>
+		</div>
+	</div>
+
+	<div id = "footer">
+		<nav id="botnav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li>
+                    <a id="menuheading">Book Reviews</a>
+                    <ul>
+                        <li class="menuitems"><a href="paternus.html">The Paternus Trilogy</a></li>
+                        <li class="menuitems"><a href="hobbit.html">The Hobbit</a></li>
+                    </ul>
+                </li>
+				<li><a href="contact.html">Contact Me</a></li>
+			</ul>
+		</nav>
+		<p>Site by Khai Nguyen</p>
+	</div>
+</body>
+</html>
