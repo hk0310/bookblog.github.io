@@ -32,7 +32,7 @@
 			<h1>For inquiries and bug reporting:</h1>
 		</div>
 		<div id="content">
-			<form id="contact" action="index.html" method="post">
+			<form id="contact" action="index.html">
                 <fieldset>
                     <ul>
                         <li>
@@ -42,8 +42,9 @@
                         </li>
 
                         <li>
-                            <label for="phone">Phone Number</label>
+                            <label for="phone">Phone Number*</label>
                             <input type="number" name="phone" id="phone"/>
+                            <p class="error" id="phone_error">* Required field</p>
                             <p class="error" id="phoneInvalid_error">* Invalid phone number</p>
                         </li>
 

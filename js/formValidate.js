@@ -39,15 +39,21 @@ function validate(e)
     return true;
 }
 
+function trim(value)
+{
+    return value.replace(/^\s+|\s+$/g,"");
+}
+
 function formHasErrors()
 {
     let errorFlag = false;
 
-    let requiredInputs = ["name", "email"];
+    let requiredInputs = ["name", "phone", "email"];
     let emailHasInput = true;
+    let phoneHasInput = true;
     for(let i = 0; i < requiredInputs.length; i++)
     {
-        if(document.getElementById(requiredInputs[i]).value == "" || document.getElementById(requiredInputs[i]).value == null)
+        if(trim(document.getElementById(requiredInputs[i]).value) == "" || document.getElementById(requiredInputs[i]).value == null)
         {
             document.getElementById(requiredInputs[i] + "_error").style.display = "block";
 
@@ -60,6 +66,10 @@ function formHasErrors()
             if(requiredInputs[i] == "email")
             {
                 emailHasInput = false;
+            }
+            else if(requiredInputs[i] == "phone")
+            {
+                phoneHasInput = false;
             }
             errorFlag = true;
         }
@@ -84,7 +94,10 @@ function formHasErrors()
             }
             else
             {
-                document.getElementById(regexInputs[i] + "Invalid_error").style.display = "block";
+                if(phoneHasInput)
+                {
+                    document.getElementById(regexInputs[i] + "Invalid_error").style.display = "block";
+                }
             }
             
             if(!errorFlag)
