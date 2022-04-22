@@ -172,6 +172,7 @@ figure figcaption
 	width: 90%;
 	margin: 10px auto;
 	line-height: 26px;
+	max-height: fit-content;
 }
 
 #content p
@@ -184,12 +185,24 @@ figure figcaption
 	padding-bottom: 20px;
 }
 
+body
+{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+#spacer
+{
+	flex: 1;
+}
+
 #footer
 {
+	margin-top: auto;
 	width: 100%;
-	margin-top: 40px;
 	background-color: #fff;
-	border-top: 1px #afafaf solid 
+	border-top: 1px #afafaf solid;
 }
 
 #botnav ul
