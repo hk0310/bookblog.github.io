@@ -332,3 +332,102 @@ fieldset
 	background-color: #fff;
 	color: #279200;
 }
+
+@media(max-width: 640px)
+{
+	#container
+	{
+		display: block;
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+
+	#container h1
+	{
+		width: fit-content;
+		margin: auto;
+	}
+
+	#currentpage a
+	{
+		border: initial;
+		border-radius: initial;
+		background-color: initial;
+	}
+
+	#container ul 
+	{
+		margin: 0px;
+		display: block;
+		width: 100%;
+	}
+
+	#container ul li 
+	{
+		width: 100%;
+		margin: 0px;
+		padding: 13px 0px;
+		background-color: #cdf0c1;
+		color:#1d6d00;
+		border-bottom: 1px solid #1d6d00;
+	}
+
+	#container ul li a
+	{
+		color:#1d6d00;
+		padding: 10px;
+		transition: 0s;
+	}
+
+	#main
+	{
+		width: 100%;
+	}
+
+	#container ul li:hover
+	{
+		background-color: #279200;
+	}
+
+	#container ul li:hover a
+	{
+		color: #cdf0c1;
+	}
+
+	#container ul li a
+	{
+		pointer-events: ;	
+	}
+
+	#botnav ul
+	{
+		width: 100%;
+		padding-left: 10px;
+	}
+
+	#footer p
+	{
+		width: 100%;
+		padding-right: 10px;
+	}
+
+	#dropdown-menu
+	{
+		display: block !important;
+		position: relative !important;
+		visibility: visible;
+		margin: auto !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		background-color: #fff;
+		padding: 0px !important;
+	}
+
+	#dropdown-menu li
+	{
+		background-color: #fff !important;
+		margin: 0px !important;
+		width: 100vw;
+	}
+}
